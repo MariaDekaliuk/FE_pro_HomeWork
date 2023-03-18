@@ -1,4 +1,5 @@
-/*Напишите цикл, который выводит в консоль числа от 1 до 10.*/
+/*Напишите цикл, который выводит 
+в консоль числа от 1 до 10.*/
 for (let i = 0; i <= 10; i++) {
     console.log(i)
 }
@@ -78,15 +79,31 @@ for (let i8 = 1; i8 <= 10; i8++) {
     console.log(`5 x ${i8} = ${result8}`);
     }
 
+// вариант Нелли
+// for(let i = 0; i <= 10; i++){
+//   let result = i * 5;
+//   console.log(`${i} * 5 = ${result}`)
+// }
+
 
 /*Напишите цикл, который переворачивает порядок элементов в массиве.*/
-const arr9 = [10, 20, 30, 40, 50];
-for (let i9 = 0; i9 < arr9.length / 2; i9++) {
-  const temp = arr9[i9];
-  arr9[i9] = arr9[arr9.length - 1 - i9];
-  arr9[arr9.length - 1 - i9] = temp;
+const arrayOver = [10, 20, 30, 40, 50];
+for (let index = 0; index < arrayOver.length / 2; index++) {
+  const temp = arrayOver[index];
+  arrayOver[index] = index[index.length - 1 - index];
+  arrayOver[arrayOver.length - 1 - index] = temp;
 }
-console.log(arr9); // [50, 40, 30, 20, 10]
+console.log(arrayOver); // [50, 40, 30, 20, 10]
+// // Напишите цикл, который переворачивает порядок элементов в массиве.
+
+// const array = ['hello', 5, 'hi', 65, false];
+
+// const array_reverse = [];
+
+// for(let i = array.length - 1; i >= 0; i--){
+//   array_reverse.push(array[i])
+// }
+
 
 
 /*Напишите цикл, который находит сумму элементов массива, кратных 3 или 5.*/
